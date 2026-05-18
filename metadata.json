@@ -1,0 +1,8 @@
+{
+  "name": "Yara Aguiar - Psicóloga",
+  "description": "Landing page premium para a psicóloga Yara Aguiar Guimarães, focada em agendamento de consultas via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
