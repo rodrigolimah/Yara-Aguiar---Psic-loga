@@ -134,15 +134,15 @@ export default function App() {
       </section>
 
       {/* 2. QUEM SOU EU */}
-      <section className="section-padding bg-white">
-        <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-16 items-center">
+      <section id="sobre" className="section-padding bg-white">
+        <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="order-2 md:order-1"
+            className="md:order-1"
           >
-            <div className="rounded-[40px] overflow-hidden shadow-xl aspect-square">
+            <div className="rounded-[40px] overflow-hidden shadow-xl aspect-square lg:aspect-[4/5]">
               <img 
                 src={IMAGES.authority} 
                 alt="Sobre Yara Aguiar" 
@@ -152,29 +152,29 @@ export default function App() {
             </div>
           </motion.div>
           
-          <div className="order-1 md:order-2">
+          <div className="md:order-2">
             <SectionTitle subtitle="Autoridade Pessoal">
               Quem sou eu
             </SectionTitle>
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Olá, eu sou a <strong>Yara Aguiar Guimarães</strong>. Minha missão é proporcionar um espaço de escuta e acolhimento onde você se sinta seguro para explorar suas emoções.
+                Sou <strong>Yara Aguiar Guimarães</strong>, psicóloga comprometida com a compreensão da subjetividade humana em sua totalidade.
               </p>
               <p>
-                Utilizo a abordagem da Psicologia Histórico-Cultural para entender não apenas o indivíduo, mas todo o contexto que o cerca.
+                Minha prática é fundamentada na <strong>Psicologia Histórico-Cultural</strong>, uma abordagem que compreende o desenvolvimento psíquico como um processo mediado pela cultura e pelas relações sociais. Meu objetivo é oferecer um espaço de escuta qualificada que possibilite a ressignificação de trajetórias e o fortalecimento do sujeito.
               </p>
               <ul className="space-y-4 pt-4">
                 {[
-                  "Atendimento personalizado e humano",
-                  "Especialista em Psicologia Histórico Cultural",
-                  "Foco em resultados e bem-estar real",
-                  "Ambiente ético e acolhedor"
+                  "Atendimento pautado no rigor ético e técnico",
+                  "Especialista em Psicologia Histórico-Cultural",
+                  "Compromisso com o desenvolvimento humano integral",
+                  "Espaço de acolhimento e mediação sensível"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
+                  <li key={i} className="flex items-start gap-4">
                     <div className="w-6 h-6 rounded-full bg-brand-bg flex items-center justify-center flex-shrink-0 mt-1">
                       <CheckCircle2 className="w-4 h-4 text-brand-primary" />
                     </div>
-                    <span>{item}</span>
+                    <span className="text-sm md:text-base">{item}</span>
                   </li>
                 ))}
               </ul>
